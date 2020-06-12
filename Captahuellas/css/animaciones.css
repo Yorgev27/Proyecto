@@ -1,0 +1,27 @@
+.aparecer_derecha{
+	animation: aparecer_derecha .25s ease-in-out forwards;
+}
+
+@keyframes aparecer_derecha{
+	from{transform: translateX(100%); opacity: 0;}
+	to{transform:translateX(0%); opacity: 1;}
+}
+
+.desvanecer_derecha{
+	animation: desvanecer_derecha .50s ease-in-out forwards;
+}
+
+@keyframes desvanecer_derecha{
+	from{transform: translateX(0%); opacity: 1;}
+	to{transform: translateX(100%); opacity: 0;}
+}
+
+.parpadeo{
+	animation: parpadeo 1s ease-in-out infinite;
+}
+
+@keyframes parpadeo{
+	0%{opacity: 1;}
+	50%{opacity: .5;}
+	100%{opacity: 1;}
+}

@@ -1,0 +1,441 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #f4f6f9;
+}
+
+ul{
+	list-style: none;
+}
+
+a{ 
+	text-decoration: none;
+ }
+
+p,h1,h2,h3,h4,h5,a,b,span,label,i,strong{
+	font-family: Candara;
+}
+
+.content-all{
+	position: relative;
+	margin-top:50px;
+	height: auto;
+}
+
+.fullheight{
+	height: 100%;
+}
+
+.fullvh{
+	height: 100vh;
+}
+
+/* CATEGORIZANDO LOS FLEXS */
+
+.flex{
+	display: flex;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.flex-margin li{
+	margin: auto;
+}
+
+/* DISPLAYS */
+
+.inlineblock{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+.none{
+	display: none;
+}
+
+
+/* CAJAS */
+
+.box{
+	display: block;
+	width: 100%;
+	height: auto;
+	min-height: 25px;
+	margin:auto;
+	overflow: hidden;
+}
+.boxpadding{
+	padding: .5rem 1rem;
+}
+
+.boxshadow{
+	box-shadow: 0px .2px 3px .2px rgba(0,0,0,.25);
+}
+
+.boxshadow_strong{
+	box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+}
+
+.boxradius{
+	border-radius: .25rem;
+}
+
+/* SEPARADORES */
+
+.linea{
+	display: block;
+	width: 95%;
+	height: .5px;
+	border:.5px solid;
+}
+
+.linea-white{
+	border-color: white;
+}
+
+.linea-dark{
+	border-color: rgba(50,50,50,1);
+}
+
+
+/* COLORES PARA LAS CAJAS*/
+
+.box-white{
+	background: white;
+}
+
+/* MARGENES */
+
+.marginauto{
+	margin:auto;
+}
+
+/*LINEA DE TEXTOS */
+
+.textcenter{
+	text-align: center;
+}
+
+/* textos */
+
+.bold{
+	font-weight: bold;
+}
+
+/* paddimentos */
+.padding-0{
+	padding:0;
+}
+
+
+
+/*iconos*/
+
+.labelicon{
+	cursor:pointer;
+	font-size:1.25rem;
+}
+
+.labelicon-right{
+	right:5px;
+	top:10px;
+	font-size:22px;
+}
+
+
+/* ALERTAS */
+.alert{
+    padding: .10rem .50rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert h5{
+	margin-top:.25rem;
+}
+
+.alert-danger{
+	color: #fff;
+    background: #dc3545;
+    border-color: #d32535;
+}
+
+.alert-success {
+    color: #fff;
+    background: #28a745;
+    border-color: #23923d;
+}
+
+.labelbutton{
+	position: relative;
+}
+
+.labelbutton label{
+	height: 40px;
+	width: 40px;
+	margin:auto;
+}
+
+.labelbutton .icon{
+	position: absolute;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display: block;
+	font-size:2rem;
+	text-align: center;
+	cursor:pointer;
+}
+
+/* AVATARES */
+
+.avatar-radius{
+	border-radius: .25rem;
+}
+
+.avatar-circle{
+	border-radius: 50%;
+}
+
+.avatar-normal{
+	width: 75px;
+	height: 75px;
+}
+
+.avatar-small{
+	width: 35px;
+	height: 35px;
+}
+
+.avatar-list{
+	width:50px;
+	height: 50px;
+}
+
+.avatar-big{
+	width: 100px;
+	height: 100px;
+}
+
+/* posiciones */
+
+.absolute{
+	position: absolute;
+}
+
+.relative{
+	position: relative;
+}
+
+/* PARA LAS TABLAS */
+
+table tbody tr{
+	cursor:pointer;
+}
+
+table tbody tr .cargo{
+	display: block;
+	font-size:2rem;
+	color: rgba(50,50,50,1);
+}
+
+table tbody tr .foto{
+	position: relative;
+}
+
+.cargoicon{
+	position: absolute;
+	bottom:-10px;
+	right:-5px;
+	font-size:1.25rem;
+	color: black;
+	width: 1.50rem;
+	height: 1.50rem;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.table-striped tbody tr:hover{
+	background: #007bff;
+}
+
+/* RIBBONS */
+
+.ribbon-wrapper {
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 70px;
+    z-index: 10;
+}
+
+.ribbon-wrapper .ribbon {
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    font-size: .8rem;
+    line-height: 100%;
+    padding: .375rem 0;
+    position: relative;
+    right: -15px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+    text-transform: uppercase;
+    top: 7px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 70px;
+    height: 20px;
+}
+
+.ribbon-wrapper .ribbon i{
+	position: absolute;
+	transform: rotate(-45deg);
+	top:2px;
+	right:25px;
+	font-size:1rem;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ANNOUNCE TABLE */
+
+.announce{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: rgba(50,50,50,1);
+}
+
+/* PARA LAS VENTANAS */
+
+
+.fixed-black{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1900;
+}
+.ventanaConfirmacion{
+	position: fixed;
+	display: inline-block;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	z-index: 2000;
+	opacity: 0;
+}
+
+.ventanaConfirmacion > .icon-x{
+	position: absolute;
+	right:5px;
+	top:5px;
+	font-size:22px;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.ventanaConfirmacion .lds-grid{
+	position: absolute;
+	right:0;
+	left:0;
+	bottom:0;
+	top:0;
+	margin:auto;
+}
+
+/* MENU ITEM */
+
+/*PALETA DEL  MENU */
+.menuitem{
+	position: relative;
+	display: block;
+	width:100%;
+	height:40px;
+	border-radius: .25rem;
+	opacity: 1;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+/*PALETA DEL HREF*/
+.menuitem a{
+	text-decoration: none;
+}
+
+.menuitem a:hover{
+	text-decoration: none;
+}
+
+.menuitem:hover{
+	background-color: rgba(255,255,255,.1);
+	color: #fff;
+}
+
+.menuitem:hover span{
+	opacity: 1;
+	margin-right:0px;
+	transition: all .5s ease-in-out;
+}
+
+/*PALETA DEL ICONO */
+.menuitem .icon{
+	position: absolute;
+	left:10px;
+	top:0px;
+	bottom:0px;
+	margin:auto;
+	display: block;
+	width: 30px;
+	height: 30px;
+	color:white;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.menuitem .icon label{
+	position: absolute;
+	left:0;
+	top:0;
+	margin:auto;
+	display: block;
+	width:100%;
+	text-align: center;
+	margin-top:5px;
+	font-size: 1.1rem;
+	font-weight: 900;
+	cursor:pointer;
+}
+
+/*PALETA DEL TEXTO */
+
+.menuitem i{
+	position: relative;
+	color:white;
+	left:50px;
+	top:7px;
+	color:white;
+	font-size:16px;
+	font-style: normal;
+}

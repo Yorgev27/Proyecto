@@ -1,0 +1,43 @@
+
+.boxheader{
+	background: linear-gradient(to left, rgba(15,125,195,1) 0%, rgba(45,150,150,1) 100%);
+	margin-bottom:0;
+}
+#boxlogin{
+	margin:auto;
+	height: auto;
+}
+
+.boxform-login{
+	display: block;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+.boxform-login .inputlabel{
+	position: absolute;
+	right:0;
+	bottom:0;
+}
+
+.boxform-login input{
+	display: block;
+	width:100%;
+	padding: 1rem .50rem;
+	border:none;
+	background: inherit;
+	outline: none;
+	border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 767px){
+	.content-all{
+		margin-top:0;
+	}
+
+	#boxlogin{
+		height: auto;
+	}
+
+}

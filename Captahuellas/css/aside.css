@@ -1,0 +1,97 @@
+
+.btnapp{
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-app {
+    border-radius: 3px;
+    background-color: rgba(50,50,50,1);
+    border: 1px solid rgba(100,100,100,1);
+    color: white;
+    font-size: 12px;
+    height: 60px;
+    margin: 0 0 10px 10px;
+    min-width: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.btn-app .badge {
+    font-size: 15px;
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    font-family: Candara;
+}
+
+.btn-app:hover{
+	color:white;
+	text-decoration: none;
+	 background-color: rgba(75,75,75,1);
+    border: 1px solid rgba(120,120,120,1);
+
+}
+
+.btn-app > i{
+    display: block;
+    font-size: 20px;
+}
+
+aside{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+    background-color: #4b545c;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+aside ul{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-height: 85vh;
+    margin-top:80px;
+    overflow-y: scroll;
+}
+
+aside ul::-webkit-scrollbar{
+    width: 10px;
+}
+
+aside ul::-webkit-scrollbar-thumb{
+    background-color: rgba(155,155,155,1);
+    width:5px;
+    border-radius: 10px;
+    border-right: 5px solid transparent;
+}
+
+@media only screen and (min-width: 768px){
+    aside{
+        width:180px;
+        transform: translateX(0%);
+    }
+
+    @media only screen and (min-width: 992px){
+        aside{
+            width:200px;
+        }
+    }
+}
